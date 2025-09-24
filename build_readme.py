@@ -69,7 +69,7 @@ for filename in os.listdir(gpx_folder):
         png_path = os.path.splitext(gpx_path)[0] + '.png'
         gpx_to_png(gpx_path, png_path)
         name = os.path.splitext(filename)[0]
-        github_path = f"https://github.com/joanboure/motoriders/gpx/{name}"
+        github_path = f"https://github.com/joanboure/motoriders/blob/main/gpx/{name}"
         entry = f"### {name}\n\n![{name}]({github_path}.png)\n\n[Descargar GPX]({github_path}.gpx)\n"
         entries.append(entry)
 
