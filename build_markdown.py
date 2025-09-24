@@ -58,9 +58,9 @@ def gpx_to_png(gpx_file, png_file):
     plt.savefig(png_file, bbox_inches='tight', pad_inches=0)
     plt.close()
 
-# Procesar todos los archivos GPX en la carpeta 'gpx' y generar motoriders.md
+# Procesar todos los archivos GPX en la carpeta 'gpx' y generar readme.md
 gpx_folder = 'gpx'
-md_filename = 'motoriders.md'
+md_filename = 'readme.md'
 entries = []
 
 for filename in os.listdir(gpx_folder):
